@@ -1,0 +1,50 @@
+Basic test: identity
+	Train on *train1* test on *test1/1.txt*
+	Class *ham*; log(Likelihood(ham))-log(likelihood(spam)) = 0.69
+
+	Train on *train1* test on *test1/2.txt*
+	Class *spam*; log(Likelihood(ham))-log(likelihood(spam)) = -0.69
+
+Simple test
+	Train on *train2* test on *test2/1.txt*
+	Class *ham*; log(Likelihood(ham))-log(likelihood(spam)) = 0.81
+
+	Train on *train2* test on *test2/2.txt*
+	Class *spam*; log(Likelihood(ham))-log(likelihood(spam)) = -0.58
+
+	Train on *train2* test on *test2/3.txt*
+	Class *ham*; log(Likelihood(ham))-log(likelihood(spam)) = 0.12
+
+Testing prior probabilities
+	Train on *train3* test on *test3/1.txt*
+	Class *ham*; log(Likelihood(ham))-log(likelihood(spam)) = 0.81
+
+	Train on *train3* test on *test3/2.txt*
+	Class *spam*; log(Likelihood(ham))-log(likelihood(spam)) = -0.29
+
+	Train on *train3* test on *test3/3.txt*
+	Class *ham*; log(Likelihood(ham))-log(likelihood(spam)) = 0.12
+
+Testing LaPlace correction
+	Train on *train4* test on *test4/1.txt*
+	Class *spam*; log(Likelihood(ham))-log(likelihood(spam)) = -5.32
+
+	Train on *train4* test on *test4/2.txt*
+	Class *ham*; log(Likelihood(ham))-log(likelihood(spam)) = 0.027
+
+	Train on *train4* test on *test4/3.txt*
+	Class *spam*; log(Likelihood(ham))-log(likelihood(spam)) = -0.58
+
+Simple test 1
+	Train on *train5* test on *test5/1.txt*
+	Class *ham*; ln(Likelihood(ham)) - ln(likelihood(spam)) = 0.693
+
+	Train on *train5* test on *test5/2.txt*
+	Class *ham*; ln(Likelihood(ham)) - ln(likelihood(spam)) = 0.693
+
+Simple test 2
+	Train on *train6* test on *test6/1.txt*
+	Class *spam*; ln(Likelihood(ham)) - ln(likelihood(spam)) = -0.223
+
+	Train on *train6* test on *test6/2.txt*
+	Class *ham*; ln(Likelihood(ham)) - ln(likelihood(spam)) = 2.61
