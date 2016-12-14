@@ -1,4 +1,4 @@
-From future@businez.com  Mon Aug 26 15:23:35 2002
+ From future@businez.com  Mon Aug 26 15:23:35 2002
 Return-Path: <future@businez.com>
 Delivered-To: zzzz@localhost.spamassassin.taint.org
 Received: from localhost (localhost [127.0.0.1])
